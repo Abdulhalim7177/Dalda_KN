@@ -1,11 +1,11 @@
 <?php
+// database/seeders/UserSeeder.php
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\User; // Correct namespace for the User model
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class UserSeeder extends Seeder
 {
