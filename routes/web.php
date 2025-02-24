@@ -1,9 +1,11 @@
 <?php
 
+use routes;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\SecurityController;
+use Illuminate\Container\Attributes\Auth;
 use App\Http\Controllers\ResidentController;
+use App\Http\Controllers\SecurityController;
 
 Route::get('/', function () {
     return view('welcome');
