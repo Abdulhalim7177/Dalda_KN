@@ -18,6 +18,11 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('role')->default('resident'); // Default role is resident
+            $table->string('phone')->nullable();
+            $table->string('altphone')->nullable();
+            $table->string('qrcode')->nullable();
+            $table->text('address')->nullable();
+            $table->string('image')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
